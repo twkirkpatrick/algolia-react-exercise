@@ -1,0 +1,9 @@
+body {
+  background: linear-gradient(black, white);
+  height: 100vh;
+  font-family: "Big Shoulders Stencil Display", cursive;
+}
+
+.card-title {
+  font-size: 30px;
+}
