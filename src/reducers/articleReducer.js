@@ -2,7 +2,7 @@ import { FETCH_ARTICLES } from "../actions/types";
 
 const initialState = {
   articles: [],
-  loading: true,
+  loading: false,
 };
 
 export default function (state = initialState, action) {
