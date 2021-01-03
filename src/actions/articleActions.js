@@ -1,8 +1,19 @@
 import { FETCH_ARTICLES } from "./types";
 
-export const fetchArticles = (term) => (dispatch) => {
+export const fetchArticles = (term) => async (dispatch) => {
   console.log(term);
-  fetch(`http://hn.algolia.com/api/v1/search?query=${term}&tags=story`)
-    .then((res) => res.json())
-    .then((articles) => console.log(articles));
+
+  try {
+    const res = await fetch(
+      `http://hn.algolia.com/api/v1/search?query=${term}&tags=story`
+    );
+    const data = await res.json();
+
+    dispatch({
+      type: FETCH_ARTICLES,
+      payload: data,
+    });
+  } catch (err) {
+    console.log(err);
+  }
 };

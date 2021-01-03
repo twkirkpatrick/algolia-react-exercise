@@ -1,7 +1,7 @@
 import { FETCH_ARTICLES } from "../actions/types";
 
 const initialState = {
-  articles: [],
+  articles: null,
   loading: false,
 };
 
