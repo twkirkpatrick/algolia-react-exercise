@@ -1,9 +1,19 @@
 body {
-  background: linear-gradient(black, white);
+  background: rgb(41, 40, 40);
   height: 100vh;
-  font-family: "Big Shoulders Stencil Display", cursive;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: white;
 }
 
 .card-title {
   font-size: 30px;
+}
+
+.card {
+  background-color: rgba(22, 22, 20, 0.959);
+}
+
+.fa-user-circle {
+  font-size: 20px;
+  margin-right: 3px;
 }

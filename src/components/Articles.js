@@ -2,15 +2,17 @@ import React from "react";
 import { connect } from "react-redux";
 import ArticleItem from "./ArticleItem";
 
-const Articles = ({ articles }) => {
-  console.log(articles.articles);
+const Articles = ({ article }) => {
+  const { articles } = article;
 
-  if (articles.articles === null) {
+  console.log(articles);
+
+  if (articles === null) {
     return null;
   } else {
     return (
       <div>
-        {articles.articles.map((article) => (
+        {articles.map((article) => (
           <ArticleItem article={article} />
         ))}
       </div>
@@ -19,9 +21,7 @@ const Articles = ({ articles }) => {
 };
 
 const mapStateToProps = (state) => ({
-  articles: state.articles,
+  article: state.article,
 });
 
 export default connect(mapStateToProps, {})(Articles);
-
-//const {author, created_at, points, title, }
