@@ -5,8 +5,6 @@ import ArticleItem from "./ArticleItem";
 const Articles = ({ article }) => {
   const { articles } = article;
 
-  console.log(articles);
-
   if (articles === null) {
     return null;
   } else {
