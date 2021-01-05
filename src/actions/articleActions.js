@@ -11,7 +11,7 @@ export const fetchArticles = (term) => async (dispatch) => {
 
     dispatch({
       type: FETCH_ARTICLES,
-      payload: data,
+      payload: data.hits,
     });
   } catch (err) {
     console.log(err);

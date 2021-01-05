@@ -10,6 +10,10 @@ const Search = ({ fetchArticles }) => {
     const searchTerm = term;
     fetchArticles(searchTerm);
   };
+
+  const onChange = (e) => {
+    setTerm(e.target.value);
+  };
   return (
     <div className="row">
       <div className="col-6 mx-auto mt-2">
@@ -18,7 +22,7 @@ const Search = ({ fetchArticles }) => {
             type="text"
             className="form-control"
             placeholder="Enter a keyword..."
-            onChange={(e) => e.target.value}
+            onChange={onChange}
             value={term}
             name="term"
           />
