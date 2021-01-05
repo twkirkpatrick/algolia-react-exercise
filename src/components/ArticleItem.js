@@ -6,21 +6,21 @@ const ArticleItem = ({ article }) => {
   return (
     <div className="row">
       <div className="col-6 mx-auto">
-        <div class="card text-center  mb-2">
-          <div class="card-body">
-            <h2 class="card-title">{title}</h2>
-            <h4 class="card-text">
-              <i class="far fa-user-circle"></i>
+        <div className="card text-center border-secondary mb-3">
+          <div className="card-body">
+            <h2 className="card-title">{title}</h2>
+            <h4 className="card-text">
+              <i className="far fa-user-circle"></i>
               {author}
             </h4>
-            <h6 class="card-text">
+            <h6 className="card-text">
               <Moment format="MM/DD/YYYY">{created_at}</Moment>
             </h6>
             <a
               href={url}
               target="_blank"
               rel="noreferrer"
-              class="btn btn-warning"
+              className="btn btn-warning"
             >
               View Article
             </a>

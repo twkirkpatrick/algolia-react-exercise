@@ -5,7 +5,7 @@ export const fetchArticles = (term) => async (dispatch) => {
 
   try {
     const res = await fetch(
-      `http://hn.algolia.com/api/v1/search?query=${term}&tags=story`
+      `http://hn.algolia.com/api/v1/search_by_date?query=${term}&tags=story`
     );
     const data = await res.json();
 
