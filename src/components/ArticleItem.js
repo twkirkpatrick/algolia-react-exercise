@@ -1,8 +1,9 @@
 import React from "react";
 import Moment from "react-moment";
 
-const ArticleItem = ({ article }) => {
-  const { title, author, created_at, url } = article;
+const ArticleItem = ({ article: { title, author, created_at, url } }) => {
+  //ArticleItem component used to render a card displaying the article information.
+  //The title, author, created_at, and url properties of each article are destructured above for easy access and cleaner code.
   return (
     <div className="row">
       <div className="col-6 mx-auto">
@@ -14,6 +15,7 @@ const ArticleItem = ({ article }) => {
               {author}
             </h4>
             <h6 className="card-text">
+              {/*utilized the react-moment package to format the date of the article*/}
               <Moment format="MM/DD/YYYY">{created_at}</Moment>
             </h6>
             <a
