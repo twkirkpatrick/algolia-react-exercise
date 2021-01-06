@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { fetchArticles, saveTerm } from "../actions/articleActions";
 import { connect } from "react-redux";
 
-//Search component that takes in the article actions as props
+//Search component that takes in the article actions as props (destructured)
 
 const Search = ({ fetchArticles, saveTerm }) => {
   const [term, setTerm] = useState("");

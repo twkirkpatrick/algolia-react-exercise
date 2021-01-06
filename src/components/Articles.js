@@ -6,7 +6,7 @@ const Articles = ({ article: { articles } }) => {
   if (articles === null) {
     return null;
   }
-  //If no articles are currently in state, return null.  Else, map over the articles in state (data returned from API), and render a ArticleItem component for each article
+  //If no articles are currently in state, return null.  Else, map over the articles in state (data returned from API), and render an ArticleItem component for each article
   return (
     <div>
       {articles.map((article) => (
