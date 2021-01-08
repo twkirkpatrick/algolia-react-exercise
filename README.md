@@ -2,7 +2,7 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge&logo=appveyor) ![Frontend:React](https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge&logo=appveyor) ![API:Algolia](https://img.shields.io/badge/API-Hacker%20News%20Algolia-red?style=for-the-badge&logo=appveyor) ![State Management: Redux](https://img.shields.io/badge/State%20Management-Redux-brightgreen?style=for-the-badge&logo=appveyor)
 
-A React application that allows the user to search the Hacker News Algolia API. The search returns stories sorted by date that match the user's search term. User's are able to view the Title, Date and Author of the post and are provided a link to view it.
+A React application that allows the user to search the Hacker News Algolia API. The search returns stories sorted by date that match the user's search term. The user is able to view the Title, Date and Author of the post and are provided a link to view it.
 
 <img src = "public/algolia.png" alt="screenshot of algolia">
 
