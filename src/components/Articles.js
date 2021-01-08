@@ -1,11 +1,13 @@
 import React from "react";
 import { connect } from "react-redux";
 import ArticleItem from "./ArticleItem";
+import Spinner from "./Spinner";
 
 const Articles = ({ article: { articles } }) => {
   if (articles === null) {
     return null;
   }
+
   //If no articles are currently in state, return null.  Else, map over the articles in state (data returned from API), and render an ArticleItem component for each article
   return (
     <div>
