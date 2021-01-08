@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 import ArticleItem from "./ArticleItem";
-import Spinner from "./Spinner";
 
 const Articles = ({ article: { articles } }) => {
   if (articles === null) {
